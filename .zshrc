@@ -100,4 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/home/varun/dotfiles --work-tree=/home/varun'
-
+alias nf="neofetch"
+alias zth="zathura"
+alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
