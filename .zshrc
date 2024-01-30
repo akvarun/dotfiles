@@ -106,3 +106,5 @@ alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
 
 
 set -o vi
+
+export PATH="$HOME/.local/bin:$PATH"
