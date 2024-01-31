@@ -108,7 +108,7 @@ bindsym $mod+F2 exec --no-startup-id "playerctl --player=spotify,mpd previous"
 bindsym $mod+F3 exec --no-startup-id "playerctl --player=spotify,mpd next"
 # launch cava
 bindsym $mod+Shift+F11 exec --no-startup-id $termalt -T cava-f -e cava
-# change eymap
+# change keymap
 bindsym $mod+F11 exec --no-startup-id $SCRIPT/dkbd
 
 # move a window to scratchpad
@@ -227,8 +227,8 @@ bindsym $mod+m	[title="math-f"] scratchpad show; [title="math-f"] move position 
 for_window [class="^.*"] border pixel 3
 
 # Set inner/outer gaps
-gaps inner 12
-gaps outer 5
+#gaps inner 12
+#gaps outer 5
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -240,7 +240,7 @@ gaps outer 5
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+#smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -384,16 +384,16 @@ bindsym $mod+space focus mode_toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1  "
-set $ws2 "2  "
-set $ws3 "3  "
-set $ws4 "4  "
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8  "
-set $ws9 "9  "
-set $ws10 "10  "
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -463,8 +463,7 @@ bindsym $mod+r mode "resize"
 bar {
 	position top
         status_command i3blocks
-	font pango:Fantasque Sans Mono, UbuntuMono Nerd Font 12.5
-	height 30
+	font pango:Fantasque Sans Mono, Monospace 12.5
 	workspace_min_width 30
 	tray_output primary
 	colors {
@@ -480,8 +479,7 @@ for_window [class="flameshot"] floating enable
 for_window [class="if-Imagej"] floating enable
 for_window [title="JDownloader 2"] floating enable
 for_window [class="java-lang-Thread"] floating enable
-for_window [instance="Godot_Engine"] floating enable
-for_window [instance="ij-ImageJ"] floating enable
+for_window [instance="Godot_Engine"] floating enable for_window [instance="ij-ImageJ"] floating enable
 for_window [title="Android Emulator"] floating enable
 for_window [title="VirtualBox Manager"] floating enable
 for_window [class="Zotero"] floating enable
@@ -545,4 +543,4 @@ for_window [title="^floating-fman$"] floating enable, resize set 1080 728, move 
 
 # google meet widget
 # to learn more: https://www.youtube.com/watch?v=SvYOEU_yYEU
-for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id $SCRIPT/gms, exec --no-start-up $SCRIPT/warn-ferdi-openk
+for_window [title="meet.google.com is sharing your screen."] move scratchpad, exec --no-startup-id pkill -RTMIN+19 i3blocks, exec --no-startup-id $SCRIPT/gms, exec --no-start-up $SCRIPT/warn-ferdi-open

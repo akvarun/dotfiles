@@ -103,6 +103,8 @@ alias config='/usr/bin/git --git-dir=/home/varun/dotfiles --work-tree=/home/varu
 alias nf="neofetch"
 alias zth="zathura"
 alias ytp="youtube-viewer -n --no-video-info --player=mpv"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 
 bindkey -v
