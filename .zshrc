@@ -102,9 +102,11 @@ source $ZSH/oh-my-zsh.sh
 alias config='/usr/bin/git --git-dir=/home/varun/dotfiles --work-tree=/home/varun'
 alias nf="neofetch"
 alias zth="zathura"
-alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
+alias ytp="youtube-viewer -n --no-video-info --player=mpv"
 
 
-set -o vi
+bindkey -v
 
 export PATH="$HOME/.local/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
