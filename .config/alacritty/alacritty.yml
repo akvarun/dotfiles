@@ -1,6 +1,5 @@
 # ~/.config/alacritty/alacritty.yml
 
-
 font:
   normal:
     family: 'JetBrains Mono'
@@ -46,7 +45,7 @@ colors:
 
 # Window configuration
 window:
-  opacity: 0.89
+  opacity: 0.90
   option_as_alt: Both
 
 # Scrolling configuration
