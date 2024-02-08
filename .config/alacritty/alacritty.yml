@@ -45,7 +45,7 @@ colors:
 
 # Window configuration
 window:
-  opacity: 0.90
+  opacity: 0.9
   option_as_alt: Both
 
 # Scrolling configuration
