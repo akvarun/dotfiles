@@ -84,6 +84,7 @@ alias zth="zathura"
 alias ytp="youtube-viewer -n --no-video-info --player=mpv"
 alias enc="gpg -c"
 alias cl="clear"
+alias sau="sudo apt upgrade"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
