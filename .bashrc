@@ -122,6 +122,7 @@ alias ytp="youtube-viewer -n --no-video-info --player=mpvt"
 alias enc="gpg -c"
 alias cl="clear"
 alias sau="sudo apt upgrade"
+alias bu="brew update"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
