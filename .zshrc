@@ -86,6 +86,8 @@ alias enc="gpg -c"
 alias cl="clear"
 alias sau="sudo apt upgrade"
 alias ta="tmux new-session -A -s main"
+alias song-dl='noglob yt-dlp -x  --embed-thumbnail --audio-quality 0 --audio-format opus -o "%(artist)s - %(title)s.%(ext)s" --parse-metadata "%(release_year)s:%(meta_date)s" --add-metadata'
+alias bu="brew update"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
