@@ -27,6 +27,7 @@ set cursorpreviewfmt "\033[7;2m"
 set drawbox
 # use enter for shell commands
 map <enter> shell
+map <a-8> cd "~/Documents/sem-8/"
 
 # show the result of execution of previous commands
 map ` !true
