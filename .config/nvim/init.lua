@@ -1,2 +1,1 @@
 require("akvarun")
-print("hello")
